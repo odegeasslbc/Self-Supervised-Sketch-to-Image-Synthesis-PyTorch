@@ -45,7 +45,7 @@ Training the main model is as simple as
 ```
 python train.py 
 ```
-This code will automatically conduct the training of both the Autoencoder then GAN. A folder is automatically created and save intermediate checkpoints and generated images.
+This code will automatically conduct the training of both the AutoEncoder and GAN (first train an AE then for a GAN, as described in the paper). A folder is automatically created and save intermediate checkpoints and generated images.
 
 The benchmarking FID on training set is also printed in the terminal every fix amount of iterations.
 
@@ -54,7 +54,7 @@ The benchmarking FID on training set is also printed in the terminal every fix a
 This code is ready to train on your own image datasets. And training on datasets used in the model (CelebA and WikiArt) or on your own datasets are the same: just place all images from a dataset into one folder.
 
 #### 2.2.2 Config training
-To config the training, just edit the config.py. Note that there are three available "DATA_NAME" to choose from: "art", "face" and "shoe". "art" is the specified optimal structure for WikiArt dataset, "face" is for CelebA, and "shoe" is for small datasets with only few thousand RGB-images (or even less). Whem train on your own dataset, you can try with the three options and see which one works the best. Note that the "shoe" option will employ an extra training objective for the Autoencoder to enforce the effectiveness of the Content-Encoder.
+To config the training, just edit the config.py. Note that there are three available "DATA_NAME" to choose from: "art", "face" and "shoe". "art" is the specified optimal structure for WikiArt dataset, "face" is for CelebA, and "shoe" is for small datasets with only few thousand RGB-images (or even less). When train on your own dataset, you can try with the three options and see which one works the best. Note that the "shoe" option will employ an extra training objective for the AutoEncoder to enforce the effectiveness of the Content-Encoder.
 
 ### 2.3 Evaluation
 Running benchmarks is as simple as
@@ -70,7 +70,7 @@ All the code are located in folder "evaluate".
 
 
 ## 3. Extra notes
-The provided code is a slightly simplified version from what described in the paper. Only few changes are made due to business concerns (we developed this model for commercial use).
+The provided code is for research use only, and is a simplified version from what described in the paper. Only few changes are made due to business concerns (we developed this model for commercial use).
 * The code only uses 3 synthesised paired-sketches for each RGB-image, instead of 10 as described in the paper.
 * The code ommits the mutual information minimization objective for the content-encoder.
 * The code defines the models with some more refined structures such as Swish activation instrad of ReLU, and Resblock that is not mentioned in the paper.
