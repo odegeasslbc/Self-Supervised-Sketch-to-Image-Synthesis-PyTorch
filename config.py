@@ -30,7 +30,7 @@ ct = datetime.datetime.now()
 TRIAL_NAME = 'trial-pr-%s-%d-%d-%d-%d'%(DATA_NAME, ct.month, ct.day, ct.hour, ct.minute)
 SAVE_FOLDER = './'
 
-PRETRAINED_AE_PATH = './train_results/AE_trial-pr-art-8-11-1-35' #None
+PRETRAINED_AE_PATH = 'add/the/pre-trained/model/path/if/fintuning' #None
 PRETRAINED_AE_ITER = 12000
 
 GAN_CKECKPOINT =None
@@ -38,22 +38,7 @@ GAN_CKECKPOINT =None
 TRAIN_AE_ONLY = False
 TRAIN_GAN_ONLY = False
 
-#data_root_colorful = './shoe/shoe_rgb/'
-#data_root_sketch_1 = './shoe/shoe_skt_1'
-#data_root_sketch_2 = './shoe/shoe_skt_2'
-#data_root_sketch_3 = './shoe/shoe_skt_3'
-
-#data_root_colorful = '../images/art_landscape/image_512/img'
-#data_root_sketch_1 = './sketch_simplification/vggadin_art-landscape_iter_1400'
-#data_root_sketch_2 = './sketch_simplification/vggadin_art-landscape_iter_2600'
-#data_root_sketch_3 = './sketch_simplification/vggadin_art-landscape_iter_2800'
-
-#data_root_colorful = '../images/art_landscape/image_512/img'
-#data_root_sketch_1 = './sketch_simplification/vggadin_art-landscape_iter_1400'
-#data_root_sketch_2 = './sketch_simplification/vggadin_art-landscape_iter_2600'
-#data_root_sketch_3 = './sketch_simplification/vggadin_art-landscape_iter_2800'
-
-data_root_colorful = '../images/photo-realistic-landscape/img'
-data_root_sketch_1 = './model_vggadain/pr-landscape_sketch_iter_3000'
-data_root_sketch_2 = './model_vggadain/pr-landscape_sketch_iter_4000'
-data_root_sketch_3 = './model_vggadain/pr-landscape_sketch_iter_5000'
+data_root_colorful = '/path/to/image/folder'
+data_root_sketch_1 = '/path/to/sketch/folder'
+data_root_sketch_2 = '/path/to/sketch/folder'
+data_root_sketch_3 = '/path/to/sketch/folder'
