@@ -1,4 +1,4 @@
-# Self-supervised-Sketch2Image-pytorch
+# Self-Supervised-Sketch2Image-pytorch
 A pytorch implementation of self-supervised sketch-to-image model.
 
 ## 0. Data
