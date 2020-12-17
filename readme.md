@@ -1,6 +1,10 @@
 # Self-supervised-Sketch2Image-pytorch
 A pytorch implementation of self-supervised sketch-to-image model.
 
+## 0. Data
+For CelebA and WikiArt paintings image, the pre-processed RGB image data and their corresponding sketch images are available from this link:
+https://drive.google.com/drive/folders/1nBvan8xnEMQpM39sJYd1fH0B-QFdzRxK?usp=sharing
+
 ## 1. Description
 The code is structured as follows:
 * models.py: all the models' structure definition, including style encoder, content encoder, decoder, generator, and discriminator.
