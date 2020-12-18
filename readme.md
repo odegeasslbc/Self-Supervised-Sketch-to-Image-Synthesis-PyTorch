@@ -1,5 +1,5 @@
 # Self-Supervised-Sketch2Image-pytorch
-A pytorch implementation of self-supervised sketch-to-image model.
+A pytorch implementation of self-supervised sketch-to-image model, the paper can be found [here](https://arxiv.org/abs/2012.09290).
 
 ## 0. Data
 For CelebA and WikiArt paintings image, the pre-processed RGB image data and their corresponding sketch images are available at this [link](https://drive.google.com/drive/folders/1nBvan8xnEMQpM39sJYd1fH0B-QFdzRxK?usp=sharing)
