@@ -76,6 +76,6 @@ All the code are located in folder "evaluate".
 The provided code is for research use only, and is a simplified version from what described in the paper. Only few changes are made due to business concerns (we developed this model for commercial use).
 * The code only uses 3 synthesised paired-sketches for each RGB-image, instead of 10 as described in the paper.
 * The code ommits the mutual information minimization objective for the content-encoder.
-* The code defines the models with some more refined structures such as Swish activation instrad of ReLU, and Resblock that is not mentioned in the paper.
+* The code defines the models with some more refined structures such as Swish activation instead of ReLU, and Resblock that is not mentioned in the paper.
 
 Despite the changes, the code still able to train a model that beats state-of-the-art models just as we claimed in the paper, and only slightly worse than our fully-flaged version. Importantly, we believe one can easily re-implement the ommitted parts mentioned above.
